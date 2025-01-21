@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { WellnessService } from '../../service/wellness/wellness.service';
+import { SectionTemplateComponent } from "../layout/section-template/section-template/section-template.component";
 
 @Component({
   selector: 'app-wellness',
   standalone: true,
-  imports: [],
+  imports: [SectionTemplateComponent],
   templateUrl: './welness.component.html',
   styleUrl: './welness.component.css'
 })

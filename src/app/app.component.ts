@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { LayoutComponent } from './component/layout/layout.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WellnessService } from './service/wellness/wellness.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +11,12 @@ import { WellnessService } from './service/wellness/wellness.service';
   imports: [
     RouterOutlet,
     HttpClientModule,
-    LayoutComponent
-  ],
+    LayoutComponent,
+    CommonModule,
+],
   providers: [WellnessService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'klais-portfolio';
 }
