@@ -1,0 +1,18 @@
+.section-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.section-header-container.middle {
+    text-align: center;
+  }
+  
+  .section-header-container.right {
+    text-align: right;
+  }
+  
