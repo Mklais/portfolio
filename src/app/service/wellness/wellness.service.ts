@@ -3,14 +3,11 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { AuthorizeResponse } from '../../model/authorize-response.model';
 import { Observable, tap } from 'rxjs';
-import { error, log } from 'console';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WellnessService {
-
-private stravaActivities = `${environment.stravaApiUrl}`;
 
   constructor(private http: HttpClient) { }
 
@@ -25,12 +22,7 @@ private stravaActivities = `${environment.stravaApiUrl}`;
 
     return this.http.post<AuthorizeResponse>(url, payload);
   }
-
-  private updateTokens(result: AuthorizeResponse): void {
-    environment.stravaAccessToken = result.access_token;
-    environment.refreshToken = result.refresh_token;
-  }
-
+  
   public findActivities(accessToken: string) {
     return this.http.get(`${environment.stravaApiUrl}?access_token=${accessToken}`).pipe();
   }

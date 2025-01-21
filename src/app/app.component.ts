@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LayoutComponent } from './component/layout/layout.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { WellnessService } from './service/wellness/welness.service';
+import { HttpClientModule } from '@angular/common/http';
+import { WellnessService } from './service/wellness/wellness.service';
 
 @Component({
   selector: 'app-root',

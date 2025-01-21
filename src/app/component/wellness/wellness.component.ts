@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WellnessService as WellnessService } from '../../../service/wellness/welness.service';
-import { log } from 'console';
+import { WellnessService } from '../../service/wellness/wellness.service';
 
 @Component({
   selector: 'app-wellness',
