@@ -9,10 +9,10 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
     RouterOutlet,
     HttpClientModule,
     LayoutComponent,
-    CommonModule,
 ],
   providers: [WellnessService],
   templateUrl: './app.component.html',

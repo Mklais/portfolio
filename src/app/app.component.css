@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -25,16 +25,14 @@ main {
     scroll-snap-type: y mandatory;
 }
 
-
 /* Centered standardized-container with max width inside each section */
 section {
     width: 100vw;
     height: 100vh;
-    background-color: #999999;
+    background-color: #121212;
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
-    align-items: center;
     overflow: hidden; 
 }
 
@@ -45,6 +43,52 @@ section {
     padding: 1rem;
     margin: 0 auto;
 }
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #e0e0e0;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #e0e0e0;
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #b3b3b3;
+  }
+
+  body, p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+  
+  .primary-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e0e0e0;
+  }
+  
+  .secondary-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b3b3;
+  }
+  
+  .disabled-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7d7d7d;
+  }
 
 .hero {
     background-color: #323333;
