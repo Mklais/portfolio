@@ -8,10 +8,12 @@ import { Component, Input } from '@angular/core';
     CommonModule
   ],
   templateUrl: './section-template.component.html',
-  styleUrl: './section-template.component.css'
+  styleUrls: [
+    './section-template.component.css',
+  ]
 })
 export class SectionTemplateComponent {
   @Input() sectionTitle: string = "";
-  @Input() sectionTitleAlignment: "left" | "middle" | "right" = "left";
+  @Input() sectionHeaderAlignment: "flex-start" | "center" | "flex-end" = "flex-start";
   @Input() sectionClassName: string = "";
 }
